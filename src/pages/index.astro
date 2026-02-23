@@ -248,33 +248,52 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<div class="skills-container scroll-reveal">
 				<div class="skills-group">
-					<h3>Core</h3>
+					<h3 class="skills-heading">
+						<svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="m18 16 4-4-4-4" />
+							<path d="m6 8-4 4 4 4" />
+							<path d="m14.5 4-5 16" />
+						</svg>
+						<span>Core</span>
+					</h3>
 					<div class="skills-tags">
-						<span>Next.js</span>
-						<span>React</span>
-						<span>Tailwind CSS</span>
-						<span>shadcn/ui</span>
-						<span>TypeScript</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m8 9-2 2 2 2"/><path d="M12 9h4"/></svg>Next.js</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="3.8"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(120 12 12)"/></svg>React</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8c2.2 0 2.2-2 4.4-2s2.2 2 4.4 2 2.2-2 4.4-2 2.2 2 4.4 2"/><path d="M2 13c2.2 0 2.2-2 4.4-2s2.2 2 4.4 2 2.2-2 4.4-2 2.2 2 4.4 2"/><path d="M4 18c2.2 0 2.2-2 4.4-2s2.2 2 4.4 2 2.2-2 4.4-2"/></svg>Tailwind CSS</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5"/><path d="M12 16v5"/><path d="M3 12h5"/><path d="M16 12h5"/><path d="m5.5 5.5 3.5 3.5"/><path d="m15 15 3.5 3.5"/><path d="m18.5 5.5-3.5 3.5"/><path d="M9 15 5.5 18.5"/></svg>shadcn/ui</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7z"/><path d="M14 3v4h4"/><path d="m10 12 2-2 2 2"/><path d="m10 16 2-2 2 2"/></svg>TypeScript</span>
 					</div>
 				</div>
 				<div class="skills-group">
-					<h3>Backend</h3>
+					<h3 class="skills-heading">
+						<svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<ellipse cx="12" cy="5" rx="9" ry="3" />
+							<path d="M3 5v14a9 3 0 0 0 18 0V5" />
+							<path d="M3 12a9 3 0 0 0 18 0" />
+						</svg>
+						<span>Backend</span>
+					</h3>
 					<div class="skills-tags">
-						<span>MySQL</span>
-						<span>PostgreSQL</span>
-						<span>MongoDB</span>
-						<span>Node.js</span>
-						<span>PHP</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>MySQL</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>PostgreSQL</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 5 6v12l7 4 7-4V6z"/><path d="M5 6l7 4 7-4"/><path d="M12 10v12"/></svg>MongoDB</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="6" rx="2"/><rect x="2" y="14" width="20" height="6" rx="2"/><path d="M6 7h.01"/><path d="M6 17h.01"/></svg>Node.js</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m8 9-2 2 2 2"/><path d="M12 15h4"/></svg>PHP</span>
 					</div>
 				</div>
 				<div class="skills-group">
-					<h3>Tools</h3>
+					<h3 class="skills-heading">
+						<svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.1-3.1a6 6 0 0 1-7.8 7.8l-7 7a2 2 0 1 1-2.8-2.8l7-7a6 6 0 0 1 7.8-7.8z" />
+						</svg>
+						<span>Tools</span>
+					</h3>
 					<div class="skills-tags">
-						<span>Git</span>
-						<span>GitHub</span>
-						<span>Azure</span>
-						<span>OpenCode CLI</span>
-						<span>OpenAI Codex</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v12"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M6 9a9 9 0 0 0 9 9"/></svg>Git</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.5 1.4-4.5-2.6-6.3-3.5"/><path d="M15 21v-3.5a3 3 0 0 0-.9-2.3c3-.3 6.1-1.5 6.1-6.9A5.4 5.4 0 0 0 18.7 4 5 5 0 0 0 18.6.5S17.5.1 15 1.8a13 13 0 0 0-6 0C6.5.1 5.4.5 5.4.5A5 5 0 0 0 5.3 4a5.4 5.4 0 0 0-1.5 4.3c0 5.4 3.1 6.6 6.1 6.9A3 3 0 0 0 9 17.5V21"/></svg>GitHub</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 18H7a4 4 0 1 1 .6-8A5.5 5.5 0 1 1 18 12a3 3 0 1 1-1 6z"/></svg>Azure</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 9h10"/><path d="m8 13 2 2 2-2"/></svg>OpenCode CLI</span>
+						<span class="skill-chip"><svg class="skill-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M5 8h14"/><path d="M7 13h10"/><path d="m8 8 1.8 5h4.4L16 8"/></svg>OpenAI Codex</span>
 					</div>
 				</div>
 			</div>
@@ -566,18 +585,36 @@ import Layout from '../layouts/Layout.astro';
 		gap: 16px;
 	}
 
+	.stat-card,
+	.proof-block,
+	.experience-card,
+	.project-card,
+	.education-card {
+		--card-hover-y: -3px;
+		--card-hover-x: 0px;
+		--card-hover-border: var(--accent);
+		--card-hover-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+		transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+	}
+
+	.stat-card:hover,
+	.proof-block:hover,
+	.experience-card:hover,
+	.project-card:hover,
+	.education-card:hover {
+		border-color: var(--card-hover-border);
+		transform: translate(var(--card-hover-x), var(--card-hover-y));
+		box-shadow: var(--card-hover-shadow);
+	}
+
 	.stat-card {
 		background: var(--bg-card);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		padding: 24px 32px;
 		text-align: center;
-		transition: border-color 0.3s, transform 0.3s;
-	}
-
-	.stat-card:hover {
-		border-color: var(--accent);
-		transform: translateY(-2px);
+		--card-hover-y: -2px;
+		--card-hover-shadow: 0 10px 22px rgba(239, 68, 68, 0.12);
 	}
 
 	.stat-value {
@@ -677,12 +714,12 @@ import Layout from '../layouts/Layout.astro';
 		border: 1px solid var(--border);
 		border-radius: 12px;
 		padding: 20px 22px;
-		transition: border-color 0.25s, transform 0.25s, background-color 0.25s;
+		--card-hover-x: 3px;
+		--card-hover-y: 0px;
+		--card-hover-shadow: 0 10px 24px rgba(239, 68, 68, 0.16);
 	}
 
 	.proof-block:hover {
-		border-color: var(--accent);
-		transform: translateX(3px);
 		background: linear-gradient(130deg, rgba(239, 68, 68, 0.1) 0%, rgba(31, 14, 16, 0.75) 100%);
 	}
 
@@ -711,12 +748,10 @@ import Layout from '../layouts/Layout.astro';
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		padding: 28px;
-		transition: border-color 0.3s, transform 0.3s;
-	}
-
-	.experience-card:hover {
-		border-color: var(--border-hover);
-		transform: translateX(4px);
+		--card-hover-x: 3px;
+		--card-hover-y: 0px;
+		--card-hover-border: var(--border-hover);
+		--card-hover-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
 	}
 
 	.experience-header {
@@ -796,14 +831,9 @@ import Layout from '../layouts/Layout.astro';
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		padding: 28px;
-		transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+		--card-hover-y: -4px;
+		--card-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 		cursor: pointer;
-	}
-
-	.project-card:hover {
-		border-color: var(--accent);
-		transform: translateY(-4px);
-		box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 	}
 
 	.project-top {
@@ -866,12 +896,9 @@ import Layout from '../layouts/Layout.astro';
 		border: 1px solid var(--border);
 		border-radius: var(--radius-sm);
 		padding: 24px;
-		transition: border-color 0.3s, transform 0.3s;
-	}
-
-	.education-card:hover {
-		border-color: var(--border-hover);
-		transform: translateY(-2px);
+		--card-hover-y: -2px;
+		--card-hover-border: var(--border-hover);
+		--card-hover-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
 	}
 
 	.education-period {
@@ -902,7 +929,10 @@ import Layout from '../layouts/Layout.astro';
 		gap: 24px;
 	}
 
-	.skills-group h3 {
+	.skills-heading {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
 		font-family: var(--font-outfit), sans-serif;
 		font-size: 14px;
 		font-weight: 500;
@@ -912,13 +942,31 @@ import Layout from '../layouts/Layout.astro';
 		margin-bottom: 12px;
 	}
 
+	.skill-icon {
+		width: 16px;
+		height: 16px;
+		color: var(--text-muted);
+		opacity: 0.9;
+		transition: color 0.2s ease, opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+	}
+
+	.skills-group:hover .skill-icon {
+		color: var(--accent);
+		opacity: 1;
+		transform: translateY(-1px);
+		filter: drop-shadow(0 0 6px var(--accent-glow));
+	}
+
 	.skills-tags {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
 	}
 
-	.skills-tags span {
+	.skill-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
 		padding: 8px 16px;
 		background: var(--bg-card);
 		border: 1px solid var(--border);
@@ -928,7 +976,20 @@ import Layout from '../layouts/Layout.astro';
 		transition: border-color 0.2s, color 0.2s, background 0.2s;
 	}
 
-	.skills-tags span:hover {
+	.skill-chip-icon {
+		width: 14px;
+		height: 14px;
+		flex: 0 0 auto;
+		opacity: 0.85;
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+
+	.skill-chip:hover .skill-chip-icon {
+		opacity: 1;
+		transform: translateY(-0.5px);
+	}
+
+	.skill-chip:hover {
 		border-color: var(--accent);
 		color: var(--accent);
 		background: var(--accent-glow);
