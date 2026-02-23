@@ -407,6 +407,13 @@ import Layout from '../layouts/Layout.astro';
 				});
 			});
 		}
+
+		document.querySelectorAll('.back-to-top, .nav-logo').forEach((scrollTopTrigger) => {
+			scrollTopTrigger.addEventListener('click', (event) => {
+				event.preventDefault();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+		});
 	});
 </script>
 
