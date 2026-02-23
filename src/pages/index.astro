@@ -55,8 +55,8 @@ import Layout from '../layouts/Layout.astro';
 					<span class="stat-label">Websites<br/>Optimized</span>
 				</div>
 				<div class="stat-card">
-					<span class="stat-value">8+</span>
-					<span class="stat-label">Months<br/>Experience</span>
+					<span class="stat-value">2</span>
+					<span class="stat-label">Months for<br/>62 Sites</span>
 				</div>
 			</div>
 		</section>
@@ -65,27 +65,30 @@ import Layout from '../layouts/Layout.astro';
 			<div class="section-header scroll-reveal">
 				<h2>About Me</h2>
 			</div>
-			<div class="summary-grid scroll-reveal">
-				<div class="summary-card">
-					<p>
-						I'm a Full Stack Developer with strong fundamentals in software engineering, 
-						specializing in <strong>Next.js, React, TailwindCSS, shadcn/ui</strong> with experience 
-						in MySQL, PostgreSQL, and MongoDB.
+			<div class="about-editorial scroll-reveal">
+				<article class="about-lead">
+					<p class="about-kicker">Engineering Profile</p>
+					<p class="about-intro">
+						Full Stack Developer focused on <strong>Next.js</strong>, <strong>React</strong> and <strong>TailwindCSS</strong>
+						with <strong>SQL</strong> and <strong>NoSQL</strong> production database experience.
 					</p>
-				</div>
-				<div class="summary-card">
-					<p>
-						I have successfully <strong>regenerated and optimized 62 production websites</strong> 
-						within two months to meet Google PageSpeed Insights and Lighthouse standards, 
-						significantly improving performance, reliability, and scalability.
+					<p class="about-body">
+						I build fast, stable systems with clean implementation details and measurable performance gains.
 					</p>
-				</div>
-				<div class="summary-card">
-					<p>
-						I actively leverage <strong>AI-assisted development tools</strong> including OpenCode CLI 
-						and OpenAI Codex CLI to accelerate development, automate repetitive tasks, 
-						and enhance overall productivity.
-					</p>
+				</article>
+				<div class="about-proofs">
+					<article class="proof-block">
+						<p class="proof-value">62 Sites Optimized</p>
+						<p class="proof-copy">Regenerated and tuned content-heavy production websites in two months to meet PageSpeed Insights, Lighthouse, and SEO standards.</p>
+					</article>
+					<article class="proof-block">
+						<p class="proof-value">Performance-First Delivery</p>
+						<p class="proof-copy">Improved reliability and scalability through targeted optimization and structured release workflows.</p>
+					</article>
+					<article class="proof-block">
+						<p class="proof-value">AI-Assisted Development</p>
+						<p class="proof-copy">Leverage OpenCode CLI and OpenAI Codex to accelerate implementation and reduce repetitive engineering tasks.</p>
+					</article>
 				</div>
 			</div>
 		</section>
@@ -609,33 +612,92 @@ import Layout from '../layouts/Layout.astro';
 		letter-spacing: -0.02em;
 	}
 
-	.summary-grid {
+	.about-editorial {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 20px;
+		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+		gap: 22px;
+		align-items: stretch;
 	}
 
-	.summary-card {
-		background: var(--bg-card);
+	.about-lead {
+		position: relative;
+		background: linear-gradient(140deg, rgba(36, 24, 26, 0.95) 0%, rgba(24, 18, 20, 0.9) 100%);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
-		padding: 28px;
-		transition: border-color 0.3s, transform 0.3s;
+		padding: 30px;
+		overflow: hidden;
 	}
 
-	.summary-card:hover {
-		border-color: var(--border-hover);
-		transform: translateY(-2px);
+	.about-lead::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 4px;
+		background: linear-gradient(to bottom, var(--accent) 0%, var(--accent-dim) 100%);
 	}
 
-	.summary-card p {
-		color: var(--text-secondary);
-		line-height: 1.7;
+	.about-kicker {
+		font-family: var(--font-mono), monospace;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		font-size: 11px;
+		color: var(--accent);
+		margin-bottom: 16px;
 	}
 
-	.summary-card strong {
+	.about-intro {
 		color: var(--text-primary);
-		font-weight: 500;
+		font-size: 19px;
+		line-height: 1.65;
+		margin-bottom: 16px;
+		max-width: 58ch;
+	}
+
+	.about-intro strong {
+		color: var(--accent);
+		font-weight: 600;
+	}
+
+	.about-body {
+		color: var(--text-secondary);
+		line-height: 1.75;
+		max-width: 62ch;
+	}
+
+	.about-proofs {
+		display: grid;
+		grid-template-rows: repeat(3, minmax(0, 1fr));
+		gap: 12px;
+	}
+
+	.proof-block {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: 12px;
+		padding: 20px 22px;
+		transition: border-color 0.25s, transform 0.25s, background-color 0.25s;
+	}
+
+	.proof-block:hover {
+		border-color: var(--accent);
+		transform: translateX(3px);
+		background: linear-gradient(130deg, rgba(239, 68, 68, 0.1) 0%, rgba(31, 14, 16, 0.75) 100%);
+	}
+
+	.proof-value {
+		font-family: var(--font-outfit), sans-serif;
+		font-size: 19px;
+		letter-spacing: -0.01em;
+		color: var(--text-primary);
+		margin-bottom: 8px;
+	}
+
+	.proof-copy {
+		font-size: 14px;
+		line-height: 1.65;
+		color: var(--text-secondary);
 	}
 
 	.experience-list {
@@ -1006,6 +1068,15 @@ import Layout from '../layouts/Layout.astro';
 		.stat-value {
 			font-size: 32px;
 		}
+
+		.about-editorial {
+			grid-template-columns: 1fr;
+		}
+
+		.about-proofs {
+			grid-template-rows: none;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 640px) {
@@ -1063,6 +1134,22 @@ import Layout from '../layouts/Layout.astro';
 
 		.projects-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.about-lead {
+			padding: 24px 22px;
+		}
+
+		.about-intro {
+			font-size: 17px;
+		}
+
+		.about-proofs {
+			grid-template-columns: 1fr;
+		}
+
+		.proof-block {
+			padding: 18px;
 		}
 	}
 </style>
