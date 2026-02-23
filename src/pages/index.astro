@@ -427,7 +427,7 @@ import Layout from '../layouts/Layout.astro';
 	.nav-cta {
 		padding: 8px 16px;
 		background: var(--accent);
-		color: var(--bg-deep) !important;
+		color: var(--accent-ink) !important;
 		border-radius: 8px;
 		font-weight: 500;
 		transition: transform 0.2s, box-shadow 0.2s !important;
@@ -435,7 +435,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.nav-cta:hover {
 		transform: translateY(-1px);
-		box-shadow: 0 4px 12px rgba(232, 197, 71, 0.3);
+		box-shadow: 0 4px 12px var(--accent-shadow);
 	}
 
 	.nav-mobile-toggle {
@@ -928,11 +928,11 @@ import Layout from '../layouts/Layout.astro';
 	.contact-btn.primary {
 		background: var(--accent);
 		border-color: var(--accent);
-		color: var(--bg-deep);
+		color: var(--accent-ink);
 	}
 
 	.contact-btn.primary:hover {
-		box-shadow: 0 8px 24px rgba(232, 197, 71, 0.25);
+		box-shadow: 0 8px 24px var(--accent-shadow);
 	}
 
 	.footer {

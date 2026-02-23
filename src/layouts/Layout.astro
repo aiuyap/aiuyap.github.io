@@ -21,18 +21,21 @@
 
 <style is:global>
 	:root {
-		--bg-deep: #0c0c0c;
-		--bg-surface: #141414;
-		--bg-elevated: #1a1a1a;
-		--bg-card: #181818;
-		--text-primary: #fafafa;
-		--text-secondary: #a1a1a1;
-		--text-muted: #6b6b6b;
-		--border: #2a2a2a;
-		--border-hover: #3d3d3d;
-		--accent: #e8c547;
-		--accent-dim: #a38632;
-		--accent-glow: rgba(232, 197, 71, 0.15);
+		--bg-deep: #0f0b0c;
+		--bg-surface: #161113;
+		--bg-elevated: #1d1618;
+		--bg-card: #1a1416;
+		--text-primary: #f8f4f4;
+		--text-secondary: #c5b8ba;
+		--text-muted: #938083;
+		--border: #35292c;
+		--border-hover: #4a373b;
+		--accent: #ef4444;
+		--accent-dim: #9f2323;
+		--accent-ink: #210505;
+		--accent-glow: rgba(239, 68, 68, 0.2);
+		--accent-soft: rgba(239, 68, 68, 0.1);
+		--accent-shadow: rgba(239, 68, 68, 0.35);
 		--radius: 16px;
 		--radius-sm: 10px;
 		--radius-xs: 6px;
@@ -77,9 +80,9 @@
 		inset: 0;
 		z-index: -1;
 		background: 
-			radial-gradient(ellipse 800px 600px at 20% 0%, rgba(232, 197, 71, 0.06) 0%, transparent 50%),
-			radial-gradient(ellipse 600px 500px at 80% 60%, rgba(232, 197, 71, 0.04) 0%, transparent 50%),
-			radial-gradient(ellipse 500px 400px at 60% 100%, rgba(120, 100, 50, 0.05) 0%, transparent 50%);
+			radial-gradient(ellipse 800px 600px at 20% 0%, var(--accent-soft) 0%, transparent 50%),
+			radial-gradient(ellipse 600px 500px at 80% 60%, rgba(239, 68, 68, 0.08) 0%, transparent 50%),
+			radial-gradient(ellipse 500px 400px at 60% 100%, rgba(125, 34, 34, 0.1) 0%, transparent 50%);
 	}
 
 	a {
