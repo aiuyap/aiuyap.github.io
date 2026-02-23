@@ -438,6 +438,8 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		position: relative;
+		z-index: 2;
 	}
 
 	.nav-logo {
@@ -1255,14 +1257,16 @@ import Layout from '../layouts/Layout.astro';
 			padding: 24px;
 			gap: 20px;
 			border-bottom: 1px solid var(--border);
-			transform: translateY(-100%);
+			z-index: 1;
+			transform-origin: top center;
+			transform: translateY(-8px) scaleY(0.85);
 			opacity: 0;
 			pointer-events: none;
-			transition: 0.3s;
+			transition: transform 0.24s ease, opacity 0.24s ease;
 		}
 
 		.nav-links.active {
-			transform: translateY(0);
+			transform: translateY(0) scaleY(1);
 			opacity: 1;
 			pointer-events: all;
 		}
