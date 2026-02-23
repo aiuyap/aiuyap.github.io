@@ -1,11 +1,1068 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<nav class="nav">
+		<div class="nav-inner">
+			<a href="#top" class="nav-logo">
+				<span class="logo-mark"></span>
+				<span class="logo-text">AY</span>
+			</a>
+			<div class="nav-links">
+				<a href="#summary">Summary</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact" class="nav-cta">Get in touch</a>
+			</div>
+			<button class="nav-mobile-toggle" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero" id="top">
+			<div class="hero-content">
+				<p class="hero-label fade-in" style="--delay: 0.1s">Full Stack Developer</p>
+				<h1 class="hero-title fade-in" style="--delay: 0.2s">Aiu Jymph Yap</h1>
+				<p class="hero-subtitle fade-in" style="--delay: 0.3s">
+					Building high-performance web applications with modern technologies. 
+					Focused on clean code, performance optimization, and exceptional user experiences.
+				</p>
+				<div class="hero-meta fade-in" style="--delay: 0.4s">
+					<span class="location">Mandaue, Cebu</span>
+					<span class="separator">•</span>
+					<a href="mailto:aiutheinvoker@gmail.com">aiutheinvoker@gmail.com</a>
+					<span class="separator">•</span>
+					<a href="https://linkedin.com/in/aiuyap" target="_blank" rel="noreferrer">LinkedIn</a>
+					<span class="separator">•</span>
+					<a href="https://github.com/aiuyap" target="_blank" rel="noreferrer">GitHub</a>
+				</div>
+				<div class="hero-tags fade-in" style="--delay: 0.5s">
+					<span class="tag">Next.js</span>
+					<span class="tag">React</span>
+					<span class="tag">Tailwind CSS</span>
+					<span class="tag">PostgreSQL</span>
+				</div>
+			</div>
+			<div class="hero-stats fade-in" style="--delay: 0.6s">
+				<div class="stat-card">
+					<span class="stat-value">62</span>
+					<span class="stat-label">Websites<br/>Optimized</span>
+				</div>
+				<div class="stat-card">
+					<span class="stat-value">8+</span>
+					<span class="stat-label">Months<br/>Experience</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="summary">
+			<div class="section-header scroll-reveal">
+				<h2>About Me</h2>
+			</div>
+			<div class="summary-grid scroll-reveal">
+				<div class="summary-card">
+					<p>
+						I'm a Full Stack Developer with strong fundamentals in software engineering, 
+						specializing in <strong>Next.js, React, TailwindCSS, shadcn/ui</strong> with experience 
+						in MySQL, PostgreSQL, and MongoDB.
+					</p>
+				</div>
+				<div class="summary-card">
+					<p>
+						I have successfully <strong>regenerated and optimized 62 production websites</strong> 
+						within two months to meet Google PageSpeed Insights and Lighthouse standards, 
+						significantly improving performance, reliability, and scalability.
+					</p>
+				</div>
+				<div class="summary-card">
+					<p>
+						I actively leverage <strong>AI-assisted development tools</strong> including OpenCode CLI 
+						and OpenAI Codex CLI to accelerate development, automate repetitive tasks, 
+						and enhance overall productivity.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="experience">
+			<div class="section-header scroll-reveal">
+				<h2>Experience</h2>
+			</div>
+			<div class="experience-list">
+				<article class="experience-card scroll-reveal">
+					<div class="experience-header">
+						<div class="experience-role">
+							<h3>Full Stack Developer</h3>
+							<span class="company">CeNix BPO Web Development Services</span>
+						</div>
+						<div class="experience-meta">
+							<span class="period">Jul 2025 - Present</span>
+							<span class="location-tag">Cebu, PH</span>
+						</div>
+					</div>
+					<ul class="experience-tasks">
+						<li>Building and optimizing scalable, high-performance web applications</li>
+						<li>Developing internal tools using Next.js and MySQL to streamline workflows</li>
+						<li>Maintaining and enhancing production websites built with PHP, Bootstrap, and jQuery</li>
+						<li>Delivering large-scale performance optimization: 62 websites in 2 months</li>
+						<li>Managing releases using Git and GitHub</li>
+					</ul>
+				</article>
+
+				<article class="experience-card scroll-reveal">
+					<div class="experience-header">
+						<div class="experience-role">
+							<h3>Associate Software Engineer</h3>
+							<span class="company">Accenture in the Philippines</span>
+						</div>
+						<div class="experience-meta">
+							<span class="period">May 2025 - Jul 2025</span>
+							<span class="location-tag">Cebu, PH</span>
+						</div>
+					</div>
+					<ul class="experience-tasks">
+						<li>Completed comprehensive bootcamp focused on Data and AI</li>
+						<li>Leveraging Microsoft Azure Cloud Technologies for analytics and ML</li>
+					</ul>
+				</article>
+
+				<article class="experience-card scroll-reveal">
+					<div class="experience-header">
+						<div class="experience-role">
+							<h3>Activation Tech</h3>
+							<span class="company">411 Locals</span>
+						</div>
+						<div class="experience-meta">
+							<span class="period">Aug 2021 - Oct 2024</span>
+							<span class="location-tag">Cebu, PH</span>
+						</div>
+					</div>
+					<ul class="experience-tasks">
+						<li>Managed Google Business listings and SEO strategies</li>
+						<li>Researched and implemented optimal keywords for visibility</li>
+					</ul>
+				</article>
+
+				<article class="experience-card scroll-reveal">
+					<div class="experience-header">
+						<div class="experience-role">
+							<h3>Customer Service Representative</h3>
+							<span class="company">Continuum Global Solutions</span>
+						</div>
+						<div class="experience-meta">
+							<span class="period">Jul 2019 - Aug 2021</span>
+							<span class="location-tag">Cebu, PH</span>
+						</div>
+					</div>
+					<ul class="experience-tasks">
+						<li>Assisted US telecom customers with billing and technical support</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="projects">
+			<div class="section-header scroll-reveal">
+				<h2>Projects</h2>
+			</div>
+			<div class="projects-grid">
+				<article class="project-card scroll-reveal">
+					<div class="project-top">
+						<span class="project-type">Web Application</span>
+						<span class="project-period">2025</span>
+					</div>
+					<h3>Project Atlas</h3>
+					<p>Performance-focused dashboard with modular UI, real-time analytics, and fine-tuned interaction states.</p>
+					<div class="project-tags">
+						<span>Next.js</span>
+						<span>MySQL</span>
+						<span>TailwindCSS</span>
+					</div>
+				</article>
+
+				<article class="project-card scroll-reveal">
+					<div class="project-top">
+						<span class="project-type">Internal Tool</span>
+						<span class="project-period">2025</span>
+					</div>
+					<h3>Project Harbor</h3>
+					<p>Workflow automation suite that centralizes tasks, approvals, and operational reporting.</p>
+					<div class="project-tags">
+						<span>React</span>
+						<span>PostgreSQL</span>
+						<span>Shadcn/UI</span>
+					</div>
+				</article>
+
+				<article class="project-card scroll-reveal">
+					<div class="project-top">
+						<span class="project-type">Optimization</span>
+						<span class="project-period">2025</span>
+					</div>
+					<h3>Project Signal</h3>
+					<p>Legacy site modernization with improved Lighthouse scores and accessible UI components.</p>
+					<div class="project-tags">
+						<span>PHP</span>
+						<span>Bootstrap</span>
+						<span>jQuery</span>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="education">
+			<div class="section-header scroll-reveal">
+				<h2>Education & Training</h2>
+			</div>
+			<div class="education-grid">
+				<article class="education-card scroll-reveal">
+					<span class="education-period">2015 - 2019</span>
+					<h3>BS Information Technology</h3>
+					<p>University of Cebu</p>
+				</article>
+				<article class="education-card scroll-reveal">
+					<span class="education-period">Self-paced</span>
+					<h3>The Odin Project</h3>
+					<p>Open-source web development curriculum</p>
+				</article>
+				<article class="education-card scroll-reveal">
+					<span class="education-period">Training</span>
+					<h3>Alliance Jumpstart Program</h3>
+					<p>J2EE-focused training with internship</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="skills">
+			<div class="section-header scroll-reveal">
+				<h2>Skills</h2>
+			</div>
+			<div class="skills-container scroll-reveal">
+				<div class="skills-group">
+					<h3>Core</h3>
+					<div class="skills-tags">
+						<span>Next.js</span>
+						<span>React</span>
+						<span>Tailwind CSS</span>
+						<span>shadcn/ui</span>
+						<span>TypeScript</span>
+					</div>
+				</div>
+				<div class="skills-group">
+					<h3>Backend</h3>
+					<div class="skills-tags">
+						<span>MySQL</span>
+						<span>PostgreSQL</span>
+						<span>MongoDB</span>
+						<span>Node.js</span>
+						<span>PHP</span>
+					</div>
+				</div>
+				<div class="skills-group">
+					<h3>Tools</h3>
+					<div class="skills-tags">
+						<span>Git</span>
+						<span>GitHub</span>
+						<span>Azure</span>
+						<span>OpenCode CLI</span>
+						<span>OpenAI Codex</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section contact-section" id="contact">
+			<div class="contact-content scroll-reveal">
+				<h2>Let's Connect</h2>
+				<p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+				<div class="contact-links">
+					<a href="mailto:aiutheinvoker@gmail.com" class="contact-btn primary">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<rect x="2" y="4" width="20" height="16" rx="2"/>
+							<path d="M22 6L12 13L2 6"/>
+						</svg>
+						Email Me
+					</a>
+					<a href="https://linkedin.com/in/aiuyap" target="_blank" rel="noreferrer" class="contact-btn">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+						</svg>
+						LinkedIn
+					</a>
+					<a href="https://github.com/aiuyap" target="_blank" rel="noreferrer" class="contact-btn">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+						</svg>
+						GitHub
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>&copy; 2026 Aiu Jymph Yap. Built with Astro.</p>
+		<a href="#top" class="back-to-top">
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M12 19V5M5 12l7-7 7 7"/>
+			</svg>
+			Back to top
+		</a>
+	</footer>
 </Layout>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const observerOptions = {
+			root: null,
+			rootMargin: '0px 0px -80px 0px',
+			threshold: 0.1
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.scroll-reveal, .fade-in').forEach(el => {
+			observer.observe(el);
+		});
+
+		const mobileToggle = document.querySelector('.nav-mobile-toggle');
+		const navLinks = document.querySelector('.nav-links');
+		
+		if (mobileToggle && navLinks) {
+			mobileToggle.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+				mobileToggle.classList.toggle('active');
+			});
+
+			navLinks.querySelectorAll('a').forEach(link => {
+				link.addEventListener('click', () => {
+					navLinks.classList.remove('active');
+					mobileToggle.classList.remove('active');
+				});
+			});
+		}
+	});
+</script>
+
+<style>
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: var(--nav-height);
+		background: rgba(12, 12, 12, 0.85);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid var(--border);
+		z-index: 100;
+	}
+
+	.nav-inner {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 0 24px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav-logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-weight: 600;
+		font-size: 18px;
+		letter-spacing: -0.02em;
+	}
+
+	.logo-mark {
+		width: 32px;
+		height: 32px;
+		border-radius: 8px;
+		background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dim) 100%);
+		position: relative;
+	}
+
+	.logo-mark::after {
+		content: '';
+		position: absolute;
+		inset: 3px;
+		border-radius: 5px;
+		border: 1px solid rgba(255,255,255,0.3);
+	}
+
+	.logo-text {
+		font-family: 'Outfit', sans-serif;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.nav-links a {
+		font-size: 14px;
+		color: var(--text-secondary);
+		transition: color 0.2s;
+	}
+
+	.nav-links a:hover {
+		color: var(--text-primary);
+	}
+
+	.nav-cta {
+		padding: 8px 16px;
+		background: var(--accent);
+		color: var(--bg-deep) !important;
+		border-radius: 8px;
+		font-weight: 500;
+		transition: transform 0.2s, box-shadow 0.2s !important;
+	}
+
+	.nav-cta:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px rgba(232, 197, 71, 0.3);
+	}
+
+	.nav-mobile-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+	}
+
+	.nav-mobile-toggle span {
+		width: 24px;
+		height: 2px;
+		background: var(--text-primary);
+		border-radius: 2px;
+		transition: 0.3s;
+	}
+
+	.nav-mobile-toggle.active span:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.nav-mobile-toggle.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-mobile-toggle.active span:nth-child(3) {
+		transform: rotate(-45deg) translate(5px, -5px);
+	}
+
+	main {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: calc(var(--nav-height) + 40px) 24px 80px;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 48px;
+		align-items: center;
+		min-height: 70vh;
+		padding: 40px 0;
+	}
+
+	.hero-content {
+		max-width: 640px;
+	}
+
+	.hero-label {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 13px;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: var(--accent);
+		margin-bottom: 16px;
+	}
+
+	.hero-title {
+		font-family: 'Outfit', sans-serif;
+		font-size: clamp(48px, 7vw, 72px);
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		line-height: 1.05;
+		margin-bottom: 20px;
+		background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 18px;
+		color: var(--text-secondary);
+		line-height: 1.7;
+		margin-bottom: 24px;
+		max-width: 540px;
+	}
+
+	.hero-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		font-size: 14px;
+		color: var(--text-muted);
+		margin-bottom: 24px;
+	}
+
+	.hero-meta .separator {
+		color: var(--border);
+	}
+
+	.hero-meta a {
+		color: var(--text-secondary);
+		border-bottom: 1px solid transparent;
+		transition: border-color 0.2s, color 0.2s;
+	}
+
+	.hero-meta a:hover {
+		color: var(--accent);
+		border-color: var(--accent);
+	}
+
+	.hero-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.tag {
+		padding: 6px 14px;
+		background: var(--bg-elevated);
+		border: 1px solid var(--border);
+		border-radius: 100px;
+		font-size: 13px;
+		font-family: 'JetBrains Mono', monospace;
+		color: var(--text-secondary);
+	}
+
+	.hero-stats {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.stat-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		padding: 24px 32px;
+		text-align: center;
+		transition: border-color 0.3s, transform 0.3s;
+	}
+
+	.stat-card:hover {
+		border-color: var(--accent);
+		transform: translateY(-2px);
+	}
+
+	.stat-value {
+		display: block;
+		font-family: 'Outfit', sans-serif;
+		font-size: 42px;
+		font-weight: 700;
+		color: var(--accent);
+		line-height: 1;
+	}
+
+	.stat-label {
+		font-size: 13px;
+		color: var(--text-muted);
+		margin-top: 8px;
+		display: block;
+		line-height: 1.4;
+	}
+
+	.section {
+		padding: 80px 0;
+	}
+
+	.section-header {
+		margin-bottom: 40px;
+	}
+
+	.section-header h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 32px;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+	}
+
+	.summary-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	.summary-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		padding: 28px;
+		transition: border-color 0.3s, transform 0.3s;
+	}
+
+	.summary-card:hover {
+		border-color: var(--border-hover);
+		transform: translateY(-2px);
+	}
+
+	.summary-card p {
+		color: var(--text-secondary);
+		line-height: 1.7;
+	}
+
+	.summary-card strong {
+		color: var(--text-primary);
+		font-weight: 500;
+	}
+
+	.experience-list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.experience-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		padding: 28px;
+		transition: border-color 0.3s, transform 0.3s;
+	}
+
+	.experience-card:hover {
+		border-color: var(--border-hover);
+		transform: translateX(4px);
+	}
+
+	.experience-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 16px;
+		margin-bottom: 16px;
+		flex-wrap: wrap;
+	}
+
+	.experience-role h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 4px;
+	}
+
+	.experience-role .company {
+		color: var(--accent);
+		font-size: 14px;
+	}
+
+	.experience-meta {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+
+	.period {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 12px;
+		color: var(--text-muted);
+	}
+
+	.location-tag {
+		font-size: 11px;
+		padding: 4px 10px;
+		background: var(--bg-elevated);
+		border: 1px solid var(--border);
+		border-radius: 100px;
+		color: var(--text-muted);
+	}
+
+	.experience-tasks {
+		list-style: none;
+		padding: 0;
+	}
+
+	.experience-tasks li {
+		position: relative;
+		padding-left: 20px;
+		margin-bottom: 8px;
+		color: var(--text-secondary);
+		font-size: 15px;
+	}
+
+	.experience-tasks li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 10px;
+		width: 6px;
+		height: 6px;
+		background: var(--accent);
+		border-radius: 50%;
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 24px;
+	}
+
+	.project-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		padding: 28px;
+		transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+		cursor: pointer;
+	}
+
+	.project-card:hover {
+		border-color: var(--accent);
+		transform: translateY(-4px);
+		box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+	}
+
+	.project-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+
+	.project-type {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent);
+	}
+
+	.project-period {
+		font-size: 12px;
+		color: var(--text-muted);
+	}
+
+	.project-card h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+	.project-card p {
+		color: var(--text-secondary);
+		font-size: 14px;
+		line-height: 1.6;
+		margin-bottom: 16px;
+	}
+
+	.project-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.project-tags span {
+		padding: 4px 10px;
+		background: var(--bg-elevated);
+		border-radius: 6px;
+		font-size: 12px;
+		color: var(--text-muted);
+		font-family: 'JetBrains Mono', monospace;
+	}
+
+	.education-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 20px;
+	}
+
+	.education-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: var(--radius-sm);
+		padding: 24px;
+		transition: border-color 0.3s, transform 0.3s;
+	}
+
+	.education-card:hover {
+		border-color: var(--border-hover);
+		transform: translateY(-2px);
+	}
+
+	.education-period {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--text-muted);
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.education-card h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 4px;
+	}
+
+	.education-card p {
+		color: var(--text-secondary);
+		font-size: 14px;
+	}
+
+	.skills-container {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.skills-group h3 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--text-muted);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 12px;
+	}
+
+	.skills-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.skills-tags span {
+		padding: 8px 16px;
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		font-size: 14px;
+		color: var(--text-secondary);
+		transition: border-color 0.2s, color 0.2s, background 0.2s;
+	}
+
+	.skills-tags span:hover {
+		border-color: var(--accent);
+		color: var(--accent);
+		background: var(--accent-glow);
+	}
+
+	.contact-section {
+		padding: 100px 0;
+	}
+
+	.contact-content {
+		background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		padding: 48px;
+		text-align: center;
+	}
+
+	.contact-content h2 {
+		font-family: 'Outfit', sans-serif;
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+
+	.contact-content p {
+		color: var(--text-secondary);
+		font-size: 16px;
+		max-width: 500px;
+		margin: 0 auto 32px;
+	}
+
+	.contact-links {
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.contact-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		padding: 14px 24px;
+		background: var(--bg-surface);
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--text-secondary);
+		transition: all 0.25s;
+	}
+
+	.contact-btn:hover {
+		border-color: var(--border-hover);
+		color: var(--text-primary);
+		transform: translateY(-2px);
+	}
+
+	.contact-btn.primary {
+		background: var(--accent);
+		border-color: var(--accent);
+		color: var(--bg-deep);
+	}
+
+	.contact-btn.primary:hover {
+		box-shadow: 0 8px 24px rgba(232, 197, 71, 0.25);
+	}
+
+	.footer {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 32px 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid var(--border);
+		font-size: 14px;
+		color: var(--text-muted);
+	}
+
+	.back-to-top {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		color: var(--text-muted);
+		transition: color 0.2s;
+	}
+
+	.back-to-top:hover {
+		color: var(--accent);
+	}
+
+	.fade-in {
+		opacity: 0;
+		transform: translateY(20px);
+		animation: fadeInUp 0.6s ease forwards;
+		animation-delay: var(--delay, 0s);
+	}
+
+	.scroll-reveal {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: opacity 0.6s ease, transform 0.6s ease;
+	}
+
+	.scroll-reveal.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@media (max-width: 900px) {
+		.hero {
+			grid-template-columns: 1fr;
+			min-height: auto;
+		}
+
+		.hero-stats {
+			flex-direction: row;
+		}
+
+		.stat-card {
+			flex: 1;
+			padding: 20px;
+		}
+
+		.stat-value {
+			font-size: 32px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.nav-links {
+			position: fixed;
+			top: var(--nav-height);
+			left: 0;
+			right: 0;
+			background: var(--bg-surface);
+			flex-direction: column;
+			padding: 24px;
+			gap: 20px;
+			border-bottom: 1px solid var(--border);
+			transform: translateY(-100%);
+			opacity: 0;
+			pointer-events: none;
+			transition: 0.3s;
+		}
+
+		.nav-links.active {
+			transform: translateY(0);
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		.nav-mobile-toggle {
+			display: flex;
+		}
+
+		.hero-title {
+			font-size: 40px;
+		}
+
+		.hero-subtitle {
+			font-size: 16px;
+		}
+
+		.hero-stats {
+			flex-direction: column;
+		}
+
+		.contact-content {
+			padding: 32px 24px;
+		}
+
+		.contact-content h2 {
+			font-size: 28px;
+		}
+
+		.footer {
+			flex-direction: column;
+			gap: 16px;
+			text-align: center;
+		}
+
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
