@@ -1,3 +1,7 @@
+---
+import { Font } from 'astro:assets';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,9 +12,9 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Aiu Jymph Yap - Full Stack Developer</title>
 		<meta name="description" content="Portfolio of Aiu Jymph Yap, Full Stack Developer focused on high-performance web systems." />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<Font cssVariable="--font-dm-sans" preload />
+		<Font cssVariable="--font-outfit" preload />
+		<Font cssVariable="--font-mono" />
 	</head>
 	<body>
 		<div class="bg-noise"></div>
@@ -56,7 +60,7 @@
 	}
 
 	body {
-		font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+		font-family: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, sans-serif;
 		background: var(--bg-deep);
 		color: var(--text-primary);
 		line-height: 1.6;
@@ -101,7 +105,7 @@
 	}
 
 	.mono {
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--font-mono), monospace;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
