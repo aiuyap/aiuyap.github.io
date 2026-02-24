@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import heroPhoto from '../assets/hero-photo.webp';
 ---
 
 <Layout>
@@ -51,7 +53,19 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<div class="hero-side fade-in" style="--delay: 0.6s">
 				<figure class="hero-photo-shell">
-					<img src="/1.webp" alt="Aiu Jymph Yap with colorful birds in an aviary" class="hero-photo" loading="eager" decoding="async" fetchpriority="high" />
+					<Image
+						src={heroPhoto}
+						alt="Aiu Jymph Yap with colorful birds in an aviary"
+						class="hero-photo"
+						width={320}
+						height={320}
+						widths={[160, 192, 256, 320]}
+						sizes="(max-width: 640px) 70vw, (max-width: 900px) 58vw, 320px"
+						quality={72}
+						loading="eager"
+						decoding="async"
+						fetchpriority="high"
+					/>
 				</figure>
 				<div class="hero-stats">
 					<div class="stat-card">
