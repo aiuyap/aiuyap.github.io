@@ -19,8 +19,8 @@ import SiteFooter from '../components/SiteFooter.astro';
 		<SummarySection />
 		<ExperienceSection />
 		<ProjectsSection />
-		<EducationSection />
 		<SkillsSection />
+		<EducationSection />
 		<ContactSection />
 	</main>
 
@@ -526,7 +526,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 
 	.about-editorial {
 		display: grid;
-		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+		grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
 		gap: 22px;
 		align-items: stretch;
 	}
@@ -563,7 +563,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 		color: var(--text-primary);
 		font-size: 19px;
 		line-height: 1.65;
-		margin-bottom: 16px;
+		margin-bottom: 18px;
 		max-width: 58ch;
 	}
 
@@ -578,9 +578,17 @@ import SiteFooter from '../components/SiteFooter.astro';
 		max-width: 62ch;
 	}
 
+	.about-lead .about-body + .about-intro {
+		margin-top: 18px;
+	}
+
+	.about-lead .about-intro + .about-body {
+		margin-bottom: 8px;
+	}
+
 	.about-proofs {
 		display: grid;
-		grid-template-rows: repeat(3, minmax(0, 1fr));
+		grid-template-rows: auto;
 		gap: 12px;
 	}
 
@@ -662,7 +670,8 @@ import SiteFooter from '../components/SiteFooter.astro';
 		color: var(--text-muted);
 	}
 
-	.location-tag {
+	.location-tag,
+	.setup-tag {
 		font-size: 11px;
 		padding: 4px 10px;
 		background: var(--bg-elevated);
