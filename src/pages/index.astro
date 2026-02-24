@@ -3,14 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import heroPhoto from '../assets/hero-photo.webp';
 import heroPhotoHover from '../assets/hero-photo2.webp';
+import navLogo from '../assets/nav-icon.png';
 ---
 
 <Layout>
 	<nav class="nav">
 		<div class="nav-inner">
 			<a href="#top" class="nav-logo">
-				<span class="logo-mark"></span>
-				<span class="logo-text">AY</span>
+				<Image
+					src={navLogo}
+					alt="Aiu logo"
+					class="nav-logo-image"
+					width={44}
+					height={44}
+					widths={[44, 88, 132]}
+					sizes="44px"
+					format="webp"
+					quality={72}
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
 			</a>
 			<div class="nav-links">
 				<a href="#summary">Summary</a>
@@ -480,30 +493,22 @@ import heroPhotoHover from '../assets/hero-photo2.webp';
 	.nav-logo {
 		display: flex;
 		align-items: center;
-		gap: 10px;
-		font-weight: 600;
-		font-size: 18px;
-		letter-spacing: -0.02em;
+		line-height: 0;
 	}
 
-	.logo-mark {
-		width: 32px;
-		height: 32px;
-		border-radius: 8px;
-		background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dim) 100%);
-		position: relative;
+	.nav-logo-image {
+		width: 44px !important;
+		height: 44px !important;
+		display: block;
+		border-radius: 10px;
+		object-fit: cover;
+		box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+		transition: transform 0.22s ease, box-shadow 0.22s ease;
 	}
 
-	.logo-mark::after {
-		content: '';
-		position: absolute;
-		inset: 3px;
-		border-radius: 5px;
-		border: 1px solid rgba(255,255,255,0.3);
-	}
-
-	.logo-text {
-		font-family: var(--font-outfit), sans-serif;
+	.nav-logo:hover .nav-logo-image {
+		transform: translateY(-1px);
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
 	}
 
 	.nav-links {
