@@ -76,7 +76,7 @@ import navLogo from '../assets/nav-icon.png';
 						widths={[173, 220, 320]}
 						sizes="(max-width: 640px) 173px, (max-width: 900px) 220px, 320px"
 						format="avif"
-						quality={60}
+						quality={70}
 						loading="eager"
 						decoding="async"
 						fetchpriority="high"
@@ -407,6 +407,7 @@ import navLogo from '../assets/nav-icon.png';
 
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
+		const nav = document.querySelector('.nav');
 		const observerOptions = {
 			root: null,
 			rootMargin: '0px 0px -80px 0px',
@@ -438,6 +439,13 @@ import navLogo from '../assets/nav-icon.png';
 		document.querySelectorAll('.section-header').forEach(header => {
 			headerObserver.observe(header);
 		});
+
+		const syncNavScrollState = () => {
+			if (!nav) return;
+			nav.classList.toggle('nav-scrolled', window.scrollY > 4);
+		};
+		syncNavScrollState();
+		window.addEventListener('scroll', syncNavScrollState, { passive: true });
 
 		const mobileToggle = document.querySelector('.nav-mobile-toggle');
 		const navLinks = document.querySelector('.nav-links');
@@ -472,10 +480,17 @@ import navLogo from '../assets/nav-icon.png';
 		left: 0;
 		right: 0;
 		height: var(--nav-height);
-		background: rgba(12, 12, 12, 0.85);
-		backdrop-filter: blur(12px);
+		background: transparent;
+		backdrop-filter: none;
 		border-bottom: 1px solid var(--border);
 		z-index: 100;
+		transition: background 0.22s ease, backdrop-filter 0.22s ease, -webkit-backdrop-filter 0.22s ease;
+	}
+
+	.nav.nav-scrolled {
+		background: rgba(12, 12, 12, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
 	}
 
 	.nav-inner {
@@ -502,13 +517,11 @@ import navLogo from '../assets/nav-icon.png';
 		display: block;
 		border-radius: 10px;
 		object-fit: cover;
-		box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
-		transition: transform 0.22s ease, box-shadow 0.22s ease;
+		transition: transform 0.22s ease;
 	}
 
 	.nav-logo:hover .nav-logo-image {
 		transform: translateY(-1px);
-		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
 	}
 
 	.nav-links {
