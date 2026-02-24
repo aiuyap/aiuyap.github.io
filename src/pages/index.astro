@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import heroPhoto from '../assets/hero-photo.webp';
+import heroPhotoHover from '../assets/hero-photo2.webp';
 ---
 
 <Layout>
@@ -56,15 +57,30 @@ import heroPhoto from '../assets/hero-photo.webp';
 					<Image
 						src={heroPhoto}
 						alt="Aiu Jymph Yap with colorful birds in an aviary"
-						class="hero-photo"
+						class="hero-photo hero-photo-base"
 						width={320}
 						height={320}
-						widths={[160, 192, 256, 320]}
-						sizes="(max-width: 640px) 70vw, (max-width: 900px) 58vw, 320px"
-						quality={72}
+						widths={[173, 220, 320]}
+						sizes="(max-width: 640px) 173px, (max-width: 900px) 220px, 320px"
+						format="avif"
+						quality={60}
 						loading="eager"
 						decoding="async"
 						fetchpriority="high"
+					/>
+					<Image
+						src={heroPhotoHover}
+						alt=""
+						aria-hidden="true"
+						class="hero-photo hero-photo-hover"
+						width={320}
+						height={320}
+						widths={[173, 220, 320]}
+						sizes="(max-width: 640px) 173px, (max-width: 900px) 220px, 320px"
+						format="avif"
+						quality={56}
+						loading="lazy"
+						decoding="async"
 					/>
 				</figure>
 				<div class="hero-stats">
@@ -620,14 +636,34 @@ import heroPhoto from '../assets/hero-photo.webp';
 	}
 
 	.hero-photo {
-		position: relative;
+		position: absolute;
+		inset: 7px;
 		z-index: 1;
-		width: 100%;
-		height: 100%;
+		width: calc(100% - 14px) !important;
+		height: calc(100% - 14px) !important;
 		border-radius: 50%;
 		object-fit: cover;
 		object-position: 62% 42%;
+		aspect-ratio: 1 / 1;
+		display: block;
 		border: 2px solid rgba(255, 255, 255, 0.14);
+		transition: opacity 0.38s ease;
+	}
+
+	.hero-photo-base {
+		opacity: 1;
+	}
+
+	.hero-photo-hover {
+		opacity: 0;
+	}
+
+	.hero-photo-shell:hover .hero-photo-hover {
+		opacity: 1;
+	}
+
+	.hero-photo-shell:hover .hero-photo-base {
+		opacity: 0;
 	}
 
 	.hero-label {
