@@ -894,19 +894,32 @@ import SiteFooter from '../components/SiteFooter.astro';
 		letter-spacing: 0.1em;
 		color: var(--text-muted);
 		display: block;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 	}
 
 	.education-card h3 {
 		font-family: var(--font-outfit), sans-serif;
-		font-size: 16px;
-		font-weight: 600;
-		margin-bottom: 4px;
+		font-size: 17px;
+		font-weight: 650;
+		line-height: 1.35;
+		color: var(--text-primary);
+		margin-bottom: 6px;
 	}
 
-	.education-card p {
-		color: var(--text-secondary);
+	.education-meta {
 		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.45;
+		color: color-mix(in srgb, var(--text-secondary) 88%, var(--text-primary) 12%);
+		margin-bottom: 10px;
+	}
+
+	.education-summary {
+		color: var(--text-secondary);
+		font-size: 13px;
+		line-height: 1.6;
+		margin: 0;
+		max-width: 46ch;
 	}
 
 	.skills-container {
