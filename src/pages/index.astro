@@ -79,7 +79,17 @@ import SiteFooter from '../components/SiteFooter.astro';
 			});
 
 			navLinks.querySelectorAll('a').forEach(link => {
-				link.addEventListener('click', () => {
+				link.addEventListener('click', (event) => {
+					if (event.button === 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+						const href = link.getAttribute('href') || '';
+						if (href.startsWith('#') && href.length > 1) {
+							const target = document.querySelector(href);
+							if (target) {
+								event.preventDefault();
+								target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+							}
+						}
+					}
 					navLinks.classList.remove('active');
 					mobileToggle.classList.remove('active');
 				});
