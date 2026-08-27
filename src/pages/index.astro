@@ -733,6 +733,14 @@ import SiteFooter from '../components/SiteFooter.astro';
 		gap: 24px;
 	}
 
+	@media (min-width: 641px) {
+		.projects-grid .project-card:last-child:nth-child(odd) {
+			grid-column: 1 / -1;
+			width: calc(50% - 12px);
+			justify-self: center;
+		}
+	}
+
 	.projects-more {
 		margin-top: 24px;
 		display: flex;
