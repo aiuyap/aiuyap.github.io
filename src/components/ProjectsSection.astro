@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import templyPreview from '../assets/temply-preview.png';
 import valentryPreview from '../assets/valentry-preview.png';
 import battleshipPreview from '../assets/battleship-preview.png';
 import memoryGamePreview from '../assets/memory-game-preview.png';
@@ -10,6 +11,50 @@ import memoryGamePreview from '../assets/memory-game-preview.png';
 				<h2>Projects</h2>
 			</div>
 			<div class="projects-grid">
+				<article class="project-card scroll-reveal">
+					<div class="project-top">
+						<span class="project-type">Web Application</span>
+						<span class="project-period">2026</span>
+					</div>
+					<div class="project-preview has-media">
+						<Image
+							src={templyPreview}
+							alt="Temply Studio homepage product grid"
+							class="project-preview-media"
+							width={960}
+							height={540}
+							widths={[320, 480, 640, 960]}
+							sizes="(max-width: 700px) 100vw, 50vw"
+							format="webp"
+							quality={74}
+							loading="lazy"
+							decoding="async"
+						/>
+					</div>
+					<h3>Temply</h3>
+					<p>A Next.js storefront for personalized digital invites and greeting cards. Customers choose a design, add photos and a message, submit payment, and receive a shareable link after review.</p>
+					<div class="project-tags">
+						<span>Next.js</span>
+						<span>TypeScript</span>
+						<span>TailwindCSS</span>
+						<span>shadcn/ui</span>
+						<span>Framer Motion</span>
+						<span>MongoDB Atlas</span>
+						<span>Google Cloud Storage</span>
+					</div>
+					<div class="project-actions">
+						<a href="https://templystudio.shop/" target="_blank" rel="noreferrer" class="project-live" aria-label="Open live site for Temply">
+							<svg class="project-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+								<circle cx="12" cy="12" r="9" />
+								<path d="M3 12h18" />
+								<path d="M12 3a15 15 0 0 1 0 18" />
+								<path d="M12 3a15 15 0 0 0 0 18" />
+							</svg>
+							Live Link
+						</a>
+					</div>
+				</article>
+
 				<article class="project-card scroll-reveal">
 					<div class="project-top">
 						<span class="project-type">Web Application</span>
